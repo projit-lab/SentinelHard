@@ -24,7 +24,7 @@ data class VerifyRequest(
 data class BiometricPayload(
     @SerialName("session_id")
     val sessionId: String,
-    val bpm: Double,
+    val bpm: Int,
     val timestamp: String,            // ISO-8601
     @SerialName("device_id")
     val deviceId: String,

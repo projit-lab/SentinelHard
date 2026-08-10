@@ -697,7 +697,7 @@ class MainActivity : AppCompatActivity() {
 
                 val payloadObj = BiometricPayload(
                     sessionId = sessionId,
-                    bpm = bpmState.value,
+                    bpm = bpmState.value.toInt(),
                     timestamp = timestamp,
                     deviceId = deviceId,
                     snr = snrState.value,
